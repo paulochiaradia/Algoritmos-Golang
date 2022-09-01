@@ -1,5 +1,5 @@
-// Algorítimo mais rápido de bubbleSort usango Golang
-// Tempo de execução 517.6 µs - i5 9600K
+// Algorítimo de bubbleSort usango Golang
+// Tempo de execução 510.7 µs - i5 9600K
 package main
 
 import (
@@ -9,9 +9,9 @@ import (
 )
 
 func main() {
-	var numeros [11]int = [11]int{1, 3, 5, 4, 2, 6, 9, 8, 7, 0, 10}
+	var numeros [12]int = [12]int{1, 3, 5, 4, 2, 6, 9, 8, 7, 0, 10}
 	fmt.Println("Algoritimo BubbleSort")
-	bubbleSorter(numeros)
+	bubbleSort(numeros)
 }
 
 // Funcao para calcular o tempo de execusão
@@ -20,7 +20,7 @@ func timeTrack(start time.Time, name string) {
 	log.Printf("%s took %s", name, elapsed)
 }
 
-func bubbleSorter(numeros [11]int) {
+func bubbleSort(numeros [12]int) {
 	defer timeTrack(time.Now(), "BubbleSort")
 	num := len(numeros)
 	foiTrocado := true
@@ -28,7 +28,7 @@ func bubbleSorter(numeros [11]int) {
 		foiTrocado = false
 		for i := 1; i < num; i++ {
 			if numeros[i-1] > numeros[i] {
-				var temp = numeros[i]
+				temp := numeros[i]
 				numeros[i] = numeros[i-1]
 				numeros[i-1] = temp
 				foiTrocado = true
