@@ -1,4 +1,4 @@
-// Algorítimo clássico de bubbleSort usango Golang
+// Algoritmo clássico de bubbleSort usando Golang
 // Tempo de execução 501 µs - i5-1135G7
 package main
 
