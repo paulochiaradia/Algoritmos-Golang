@@ -1,3 +1,6 @@
+// Algorítimo de bubbleSort usango Golang
+// Tempo de execução 496.8 µs - i5-1135G7
+
 package main
 
 import (
@@ -27,5 +30,3 @@ func bubbleSort(numeros []int) {
 	}
 	fmt.Println(numeros)
 }
-
-//434.8µs - 496.8 µs
