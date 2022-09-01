@@ -14,6 +14,7 @@ func main() {
 	bubbleSorter(numeros)
 }
 
+// Funcao para calcular o tempo de execusão
 func timeTrack(start time.Time, name string) {
 	elapsed := time.Since(start)
 	log.Printf("%s took %s", name, elapsed)
